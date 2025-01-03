@@ -1,5 +1,5 @@
 
-# 🏆 Flexión Challenge - ¡Tu Reto Diario de Fuerza! 💪
+# 🏆 Flexium R - ¡Tu Reto Diario de Fuerza! 💪
 
 > Una herramienta para seguir y gestionar tu reto personal de flexiones durante todo un año (366 días). ¡Mantente motivado, registra tu progreso y alcanza tus metas! 🚀
 
@@ -61,12 +61,6 @@
 
 ---
 
-## 👀 Vista Previa
-
-![Vista previa](https://via.placeholder.com/600x300?text=Vista+Previa)
-
----
-
 ## 🤝 Contribuciones
 
 ¡Las contribuciones son bienvenidas! 🛠️ Si tienes ideas o encuentras errores, sigue estos pasos:
@@ -97,8 +91,8 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 ## 🌐 Contacto
 
 Si tienes preguntas o sugerencias, ¡contáctame! 📧  
-- **Correo:** tuemail@example.com  
-- **GitHub:** [@tuusuario](https://github.com/tuusuario)
+- **Correo:** rodriguezyerson2005@gmail.com  
+- **GitHub:** [@RodriguezYerson2005](https://github.com/YersonRodriguez2005)
 
 ---
 
