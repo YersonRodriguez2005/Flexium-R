@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexium R</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').then(() => {
+                console.log('Service Worker registrado.');
+            });
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+        <div class="w-full max-w-md bg-gray-800 rounded-xl shadow-lg p-6 space-y-6">
+            <!-- Header -->
+            <div class="text-center space-y-2">
+                <div class="flex justify-center">
+                    <span class="text-4xl text-yellow-400">🏆</span>
+                </div>
+                <h1 class="text-2xl font-bold text-yellow-400">Flexium R</h1>
+                <p class="text-sm text-gray-400">¡366 días para fortalecer tu cuerpo!</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="space-y-2">
+                <div class="flex justify-between text-sm text-gray-400">
+                    <span>Progreso</span>
+                    <span id="progressText">0%</span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div id="progressBar" class="bg-yellow-400 h-2 rounded-full transition-all duration-300"
+                        style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-700 p-4 rounded-lg text-center">
+                    <p class="text-sm text-gray-400">Día actual</p>
+                    <p id="currentDay" class="text-2xl font-bold text-yellow-400">1</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg text-center">
+                    <p class="text-sm text-gray-400">Repeticiones</p>
+                    <p id="currentReps" class="text-2xl font-bold text-yellow-400">1</p>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="space-y-3">
+                <button id="markDayButton"
+                    class="w-full py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-200 flex items-center justify-center">
+                    <span class="mr-2">✓</span>
+                    Marcar Día Completado
+                </button>
+
+                <button id="goBackButton"
+                    class="w-full py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition duration-200 flex items-center justify-center">
+                    <span class="mr-2">⬅</span>
+                    Regresar un Día
+                </button>
+
+                <button id="resetButton"
+                    class="w-full py-3 border border-red-500 text-red-500 hover:bg-red-600 hover:text-white font-semibold rounded-lg transition duration-200 flex items-center justify-center">
+                    <span class="mr-2">↺</span>
+                    Reiniciar Progreso
+                </button>
+            </div>
+
+            <!-- Achievement Badge (Hidden by default) -->
+            <div id="achievementBadge" class="hidden text-center space-y-2">
+                <span class="text-4xl text-yellow-400">🌟</span>
+                <p class="text-sm font-medium text-gray-400">
+                    ¡Felicitaciones! Has completado el desafío, recuerda que la disciplina es fundamental para el éxito.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
