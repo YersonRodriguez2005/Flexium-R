@@ -3,8 +3,6 @@
 
 > Una herramienta para seguir y gestionar tu reto personal de flexiones durante todo un año (366 días). ¡Mantente motivado, registra tu progreso y alcanza tus metas! 🚀
 
-![Demo](https://via.placeholder.com/800x400?text=Captura+de+Pantalla+de+la+Herramienta)
-
 ---
 
 ## 🌟 Características Principales
