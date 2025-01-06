@@ -6,15 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexium R</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="manifest" href="manifest.json">
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js').then(() => {
-                console.log('Service Worker registrado.');
-            });
-        }
-    </script>
+    <link rel="shortcut icon" href="./logo.webp" type="image/webp">
 </head>
 
 <body class="bg-gray-900 text-gray-200">
@@ -73,6 +65,18 @@
                     Reiniciar Progreso
                 </button>
             </div>
+
+            <div class="space-y-3">
+                <label for="reminderTime" class="block text-sm text-gray-400">
+                    Define la hora del recordatorio:
+                </label>
+                <input type="time" id="reminderTime" class="w-full bg-gray-700 text-white rounded-lg p-2">
+                <button id="setReminderButton"
+                    class="w-full py-3 bg-purple-500 hover:bg-purple-600 text-white font-semibold rounded-lg transition duration-200">
+                    Activar Recordatorio
+                </button>
+            </div>
+            
 
             <!-- Achievement Badge (Hidden by default) -->
             <div id="achievementBadge" class="hidden text-center space-y-2">
